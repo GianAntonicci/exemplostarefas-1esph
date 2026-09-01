@@ -1,5 +1,7 @@
 // useEffect - Atualiza na hora o que foi cadastrado, não precisa dar F5
 import {useState, useEffect} from 'react'
+import Contador from '../components/Contador.jsx'
+import '../css/style.css'
 
 const Tarefas = () => {
 
@@ -70,6 +72,7 @@ const Tarefas = () => {
       </ul>
       {/* Compara se nao tiver tarefas deixa a mensagem nenhuma tarefa salva */}
       {tarefas.length === 0 && <p>Nenhuma Tarefa Salva</p>}
+      <Contador/>
     </>
   )
 }
